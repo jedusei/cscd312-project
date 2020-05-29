@@ -1,4 +1,5 @@
-gunicorn==20.0.4
-detecto==1.1.3
 Django==3.0.6
 djangorestframework==3.11.0
+torch==1.5.0+cpu
+torchvision==0.6.0+cpu
+detecto==1.1.3
