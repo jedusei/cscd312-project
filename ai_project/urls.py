@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from object_detector_app.views import detect_objects_api_view
+from object_detector_app.views import detect_objects_api_view, get_results_api_view
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('api/detect', detect_objects_api_view, name='detect'),
+    path('api/results', get_results_api_view, name='get_results'),
 ]
